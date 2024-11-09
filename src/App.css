@@ -1,38 +1,206 @@
-.App {
+.back {
+  background: #FF9D00 0% 0% no-repeat padding-box;
+  width: 100%;
+  height: 100%;
+}
+
+.title-1 {
+  width: 243px;
+  height: 282px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 240px/249px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-shadow: 12px 0px 0px #000000;
+}
+
+.title-2 {
+  width: 473px;
+  height: 208px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 96px/96px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-left: 24px;
+}
+
+.symbol {
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  width: 85px;
+  height: 52px;
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 44px/40px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.line-1 {
+  position: absolute;
+  top: 78.5px;
+  right: 0px;
+  width: 85px;
+  height: 0px;
+  /* UI Properties */
+  border-top: 4px solid #FFFFFF;
+}
+
+.start-box {
+  width: 350px;
+  height: 58px;
+  /* UI Properties */
+  background: #000000 0% 0% no-repeat padding-box;
+}
+
+.start-word {
+  width: 106px;
+  height: 42px;
+  /* UI Properties */
   text-align: center;
+  font: normal normal bold 36px/36px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FF9D00;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slogan {
+  height: 28px;
+  /* UI Properties */
+  font: italic normal normal 24px/28px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-bottom: 191px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title-3 {
+  width: 310px;
+  height: 35px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal bold 30px/30px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title-3-border {
+  width: 342px;
+  height: 51px;
+  /* UI Properties */
+  border: 4px solid #FFFFFF;
+  padding: 8px 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.score {
+  width: 114px;
+  height: 55px;
+  /* UI Properties */
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  padding: 12px 16px 8px;
+  text-align: center;
+  font: normal normal bold 30px/30px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FF9D00;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question-n {
+  width: 66px;
+  height: 52px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal bold 44px/44px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-left: 8px;
+}
+
+.countdown {
+  width: 260px;
+  height: 112px;
+  /* UI Properties */
+  text-align: center;
+  font: italic normal bold 96px/96px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  margin-left: 128px;
+}
+
+.cal-box {
+  max-width: 445px;
+  height: 131px;
+  /* UI Properties */
+  font: normal normal bold 112px/112px Roboto Condensed;
+  letter-spacing: 0px;
+  color: black;
+}
+
+.answer-box {
+  width: 255px;
+  height: 131px;
+  /* UI Properties */
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.answer {
+  max-width: 170px;
+  height: 131px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal bold 112px/112px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-left: 43px;
+
+}
+
+.hint {
+  height: 28px;
+  /* UI Properties */
+  text-align: center;
+  font: italic normal normal 24px/16px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.final-score {
+  width: 544px;
+  height: 66px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal bold 56px/56px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+
+
+}
+
+.try-again {
+  width: 172px;
+  height: 42px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal bold 36px/36px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FF9D00;
+}
+
+.point {
+  width: 114px;
+  height: 131px;
+  /* UI Properties */
+  text-align: center;
+  font: normal normal bold 112px/112px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #000000;
+}
+input:focus {
+  outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
