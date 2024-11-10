@@ -88,7 +88,7 @@ function App() {
     if (type === 'click') {
       startRef.current.style.display = 'none'
       mainRef.current.style.display = 'grid'
-      setResetTime(prev => !prev);
+      setResetTime(true);
       setResetTopic(prev => !prev);
       setCountdown(60);
     }
@@ -99,10 +99,12 @@ function App() {
       restartRef.current.style.display = 'none'
       startRef.current.style.display = 'grid'
       setScore(0);
+      setResetTime(false);
     }
   }
   useEffect(() => {
-    let time = 60;
+    if (!resetTime) return;
+    let time = 3;
     const intervalId = setInterval(() => {
       time = time - 1;
       setCountdown(time);
