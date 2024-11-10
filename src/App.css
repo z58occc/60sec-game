@@ -157,10 +157,10 @@
 }
 
 .hint {
-  height: 28px;
+  height: 102px;
   /* UI Properties */
   text-align: center;
-  font: italic normal normal 24px/16px Roboto Condensed;
+  font: italic normal normal 24px/24px Roboto Condensed;
   letter-spacing: 0px;
   color: #FFFFFF;
 }

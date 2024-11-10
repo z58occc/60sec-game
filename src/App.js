@@ -51,7 +51,7 @@ function App() {
     let num2;
     if (countdown > 40) {
       num1 = (Math.floor(Math.random() * 10));
-      num2 = (Math.floor(Math.random() * 10));
+      num2 = (Math.floor((Math.random() * 9) + 1));
     } else if (countdown > 20) {
       num1 = (Math.floor((Math.random() * 90) + 10));
       num2 = (Math.floor((Math.random() * 90) + 10));
@@ -59,6 +59,7 @@ function App() {
       num1 = (Math.floor((Math.random() * 900) + 100));
       num2 = (Math.floor((Math.random() * 900) + 100));
     }
+
     setNum1(num1);
     setNum2(num2);
     const symbols = ['+', '-', '×', '÷'];
@@ -76,8 +77,8 @@ function App() {
         }
       );
       const correctAns = math.evaluate(result);
-      setCorrectAns(correctAns);
-
+      const finalAns = Number.isInteger(correctAns) ? correctAns : correctAns.toFixed(1);
+      setCorrectAns(finalAns);
     } catch (error) {
       console.log(error);
     }
@@ -143,7 +144,7 @@ function App() {
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
-      <div className='start back  '
+      <div className='start back  vh-100'
         style={{
           display: 'grid'
         }}
@@ -201,7 +202,7 @@ function App() {
         </div>
 
       </div>
-      <div className='main back  '
+      <div className='main back  vh-100'
         style={{
           display: 'none'
         }}
@@ -299,6 +300,8 @@ function App() {
             align-items-center
             '>
               press enter to answer
+              <br />
+              （小數部分請四捨五入取到小數點下一位）
             </div>
           </div>
         </div>
@@ -306,7 +309,7 @@ function App() {
 
       <div
         ref={restartRef}
-        className='restart back  '
+        className='restart back  vh-100'
         style={{
           display: 'none'
         }}
@@ -331,7 +334,11 @@ function App() {
               marginTop: '8px'
             }}
           >
-            — YOUR FINAL SCORE —
+            —
+            <span className='final-score text-black'>
+              YOUR FINAL SCORE
+            </span>
+            —
           </div>
           <div className='point'
             style={{
@@ -373,3 +380,8 @@ function App() {
 }
 
 export default App;
+
+//79行的math兩個問題
+//答案要給到小數幾位（玩家輸入的答案符合幾位算對）小數部分取到小數點下一位
+//除0問題解決
+
