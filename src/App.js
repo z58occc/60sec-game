@@ -104,7 +104,7 @@ function App() {
   }
   useEffect(() => {
     if (!resetTime) return;
-    let time = 3;
+    let time = 60;
     const intervalId = setInterval(() => {
       time = time - 1;
       setCountdown(time);
