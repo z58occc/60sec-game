@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/60sec-game/static/css/main.884673ca.css",
-    "main.js": "/60sec-game/static/js/main.ed0baf10.js",
+    "main.js": "/60sec-game/static/js/main.ee1d4eea.js",
     "static/js/453.1e5665dc.chunk.js": "/60sec-game/static/js/453.1e5665dc.chunk.js",
     "index.html": "/60sec-game/index.html",
     "main.884673ca.css.map": "/60sec-game/static/css/main.884673ca.css.map",
-    "main.ed0baf10.js.map": "/60sec-game/static/js/main.ed0baf10.js.map",
+    "main.ee1d4eea.js.map": "/60sec-game/static/js/main.ee1d4eea.js.map",
     "453.1e5665dc.chunk.js.map": "/60sec-game/static/js/453.1e5665dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.884673ca.css",
-    "static/js/main.ed0baf10.js"
+    "static/js/main.ee1d4eea.js"
   ]
 }
